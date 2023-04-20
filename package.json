@@ -1,7 +1,7 @@
 {
-  "name": "kodak",
+  "name": "IQTest",
   "version": "1.0.0",
-  "description": "Pet project",
+  "description": "Test task",
   "main": "index.js",
   "scripts": {
     "dev": "gulp dev",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Tinliin/Kodak.git"
+    "url": "git+https://github.com/Tinliin/IQTest.git"
   },
   "author": "Zayatc",
   "license": "ISC",
@@ -26,9 +26,9 @@
     "sass": "^1.59.3"
   },
   "bugs": {
-    "url": "https://github.com/Tinliin/Kodak/issues"
+    "url": "https://github.com/Tinliin/IQTest.git"
   },
-  "homepage": "https://github.com/Tinliin/Kodak#readme",
+  "homepage": "https://github.com/Tinliin/IQTest#readme",
   "dependencies": {
     "aos": "^2.3.4"
   }
