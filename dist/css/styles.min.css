@@ -35,17 +35,81 @@ header {
   content: "";
   transform: translateY(7px);
 }
-
-.menu_btn:active span::before {
-  transform: rotate(0.12turn);
+.invite {
+  background-image: url(../img/rain_bk.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
 }
 
-.menu_btn:active span::after {
-  transform: rotate(-0.12turn);
+.invitation_text {
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 27px;
+  color: #ffffff;
 }
 
-.menu_btn:active span {
-  background-color: #181818;
+h3 {
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 0;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  text-transform: uppercase;
+  color: #ffc700;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.btn_yellow {
+  display: flex;
+  width: 189px;
+  height: 41px;
+  background: radial-gradient(50% 50% at 50% 50%, #ffc700 0%, #ffc700 100%);
+  border-radius: 20px;
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+  margin: 150px auto 22px;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #0d0c11;
+}
+
+.text_bold_yellow {
+  margin: 0;
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffc700;
+}
+
+.text_bold_white {
+  margin: 0;
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document

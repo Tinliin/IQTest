@@ -36,13 +36,13 @@ header {
   transform: translateY(7px);
 }
 
-.menu_btn:active span::before {
-  transform: rotate(0.12turn);
-}
-.menu_btn:active span::after {
-  transform: rotate(-0.12turn);
-}
+// .menu_btn:active span::before {
+//   transform: rotate(0.12turn);
+// }
+// .menu_btn:active span::after {
+//   transform: rotate(-0.12turn);
+// }
 
-.menu_btn:active span {
-    background-color: #181818;
-}
+// .menu_btn:active span {
+//     background-color: #181818;
+// }
