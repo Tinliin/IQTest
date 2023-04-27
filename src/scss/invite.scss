@@ -28,9 +28,8 @@ h3 {
   font-weight: 400;
   font-size: 30px;
   text-align: center;
-  margin-top: 0;
-  margin-left: 15vw;
-  margin-right: 15vw;
+  margin: 0 15vw 150px;
+ 
   text-transform: uppercase;
   color: #ffc700;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -48,12 +47,17 @@ h3 {
   font-size: 14px;
   line-height: 18px;
   text-decoration: none;
-  margin: 150px auto 22px;
+  margin: 0 auto 0;
   justify-content: center;
   align-items: center;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #0d0c11;
+  transition: 500ms;
+  &:hover {
+    background: #DADADA;
+    box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.25);
+  }
 }
 
 .text_bold_yellow {
@@ -66,6 +70,7 @@ h3 {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #ffc700;
+  margin: 22px 5vw 0;
 }
 
 .text_bold_white {
@@ -78,4 +83,29 @@ h3 {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #ffffff;
+  margin: 0 5vw;
+}
+.arrow_up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+height: 16px;
+border-radius: 50%;
+background: #FFFFFF;
+margin: 11px auto 3px;
+}
+
+.link_more {
+  font-family: 'PT Serif';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 11px;
+text-align: center;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+color: #FFFFFF;
+text-decoration: none;
+margin-bottom: 11px;
 }

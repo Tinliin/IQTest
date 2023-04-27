@@ -1,0 +1,18 @@
+.more {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+
+.more_text {
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #272727;
+  margin: 38px 2vw;
+}

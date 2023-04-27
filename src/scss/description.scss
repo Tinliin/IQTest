@@ -1,0 +1,101 @@
+.description {
+  background-image: url(../img/rain_bk2.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 54px 14px 12px;
+  position: relative;
+}
+
+.description_text {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #ffffff;
+  margin-right: 10.8vw;
+}
+
+.description_on_white {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 0.05em;
+  color: #181818;
+  padding: 30px 15px;
+  background-color: rgba(243, 243, 242, 0.8);
+  border-radius: 20px;
+  margin: 0 0 33px;
+}
+
+.yellow_accent {
+  color: #ffc700;
+}
+
+.btn_transparent {
+  display: flex;
+  width: 189px;
+  height: 41px;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 20px;
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+  margin: 0 auto 0;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  transition: 500ms;
+  &:hover {
+    background: #dadada9b;
+    box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.upper_flash {
+  position: absolute;
+  background: url(../img/lightning_PNG9.png);
+  width: 165px;
+  height: 165px;
+  right: -20px;
+  top: 65px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.lower_flash {
+  position: absolute;
+  background: url(../img/lightning_PNG9.png);
+  width: 165px;
+  height: 165px;
+  left: -20px;
+  top: 274px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotateY(180deg);
+}
+
+.footer {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 52px auto 13px;
+}
