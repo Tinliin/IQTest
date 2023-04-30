@@ -125,6 +125,7 @@ header {
   margin-top: -1.5px;
   background: #696969;
   transition: 1000ms;
+  margin-right: 9px;
 }
 
 .menu_btn span::before {
@@ -595,4 +596,116 @@ template {
   letter-spacing: 0.05em;
   margin: 0 10vw;
   color: #ffffff;
+}
+.survey {
+  background-image: url(../img/rain_bk2.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 94vh;
+}
+
+h2 {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffc700;
+}
+
+.survey_form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.survey_label {
+  display: flex;
+  justify-content: start;
+  background: rgba(242, 243, 243, 0.15);
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 58px;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  color: #ffffff;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.survey_input {
+  margin-right: 39px;
+  margin-left: 35px;
+}
+
+.submit_button {
+  width: 189px;
+  height: 41px;
+  background: #dadada;
+  box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #8e8e8e;
+  margin-bottom: 25px;
+}
+
+.submit_button.active {
+  background: radial-gradient(50% 50% at 50% 50%, #ffc700 0%, #ffc700 100%);
+  color: #0d0c11;
+  border: none;
+}
+
+.questions_container {
+  margin: auto 0;
+  width: 100%;
+}
+
+h5 {
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.progress_bar {
+  width: 80vw;
+  height: 11px;
+  background: #F2F3F3;
+  mix-blend-mode: normal;
+  opacity: 0.59;
+  border-radius: 10.5px;
+  margin: 17px auto;
+}
+
+.progress {
+  width: 5vw;
+  height: 100%;
+  left: 30px;
+  top: 63px;
+  background: #3BDE7C;
+  border-radius: 10.5px;
 }

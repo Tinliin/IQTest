@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=PT+Serif:wght@400;700&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../dist/css/styles.min.css" />
+    <title>IQTest</title>
+  </head>
+  <body>
+    <header>
+      <a class="menu_btn" href="#">
+        <span></span>
+      </a>
+      <img src="../img/brain.png" alt="" />
+      <h2>тест на определение IQ</h2>
+    </header>
+    <main>
+      <section class="survey">
+        <div class="progress_bar"><div class="progress"></div></div>
+        <h5>ваш пол:</h5>
+        <form class="survey_form" action="">
+          <div class="questions_container">
+            <label class="survey_label" for="male">
+              <input
+                class="survey_input"
+                type="radio"
+                name="gender"
+                value="male"
+              />
+              Мужчина
+            </label>
+            <label class="survey_label" for="female">
+              <input
+                class="survey_input"
+                type="radio"
+                name="gender"
+                value="female"
+              />
+              Женщина
+            </label>
+          </div>
+
+          <input class="submit_button" type="submit" value="Далее" />
+        </form>
+      </section>
+    </main>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var maleInput = document.querySelector('input[value="male"]');
+        var femaleInput = document.querySelector('input[value="female"]');
+        var submitButton = document.querySelector(".submit_button");
+
+        maleInput.addEventListener("change", toggleSubmitButton);
+        femaleInput.addEventListener("change", toggleSubmitButton);
+
+        function toggleSubmitButton() {
+          if (maleInput.checked || femaleInput.checked) {
+            submitButton.classList.add("active");
+          } else {
+            submitButton.classList.remove("active");
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
