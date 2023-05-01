@@ -1,6 +1,13 @@
 .quote {
   background-image: url(../img/god.png);
   background-size: cover;
+  background-repeat: no-repeat;
+  @media (min-width: 600px) {
+    height: 100vh;
+    background-position: center;
+    // background-size: cover;
+  // background-repeat: no-repeat;
+  }
 }
 
 .gradient {
@@ -10,6 +17,10 @@ background: radial-gradient(
     rgba(38, 91, 199, 0.96) 40.62%, 
     rgba(39, 98, 187, 0) 85.42%
 );
+@media (min-width: 600px) {
+  width: 600px;
+  margin: auto auto;
+}
 }
 
 .openquote {
@@ -18,6 +29,9 @@ background: radial-gradient(
 
 .closequote {
   margin: 0 6.8vw 6.1vh 75vw;
+  @media (min-width: 600px) {
+margin-left: 500px;
+  }
 }
 
 .quote_text {

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=PT+Serif:wght@400;700&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../dist/css/styles.min.css" />
+    <title>IQTest</title>
+  </head>
+  <body>
+    <header>
+      <a class="menu_btn" href="#">
+        <span></span>
+      </a>
+      <img src="../img/brain.png" alt="" />
+      <h2>тест на определение IQ</h2>
+    </header>
+    <main>
+      <section class="survey">
+        <div class="progress_bar"><div class="progress_extra"></div></div>
+        <h5>Продолжите числовой ряд:
+          18  20  24  32  :</h5>
+        <form class="survey_form" action="./age.html">
+          <div class="questions_container">
+            <label class="survey_label" for="62">
+              <input
+                class="survey_input"
+                type="radio"
+                name="sequence"
+                value="62"
+              />
+              62
+            </label>
+            <label class="survey_label" for="48">
+              <input
+                class="survey_input"
+                type="radio"
+                name="sequence"
+                value="48"
+              />
+              48
+            </label>
+            <label class="survey_label" for="74">
+              <input
+                class="survey_input"
+                type="radio"
+                name="sequence"
+                value="74"
+              />
+              74
+            </label>
+            <label class="survey_label" for="57">
+              <input
+                class="survey_input"
+                type="radio"
+                name="sequence"
+                value="57"
+              />
+              57
+            </label>
+            <label class="survey_label" for="60">
+              <input
+                class="survey_input"
+                type="radio"
+                name="sequence"
+                value="60"
+              />
+              60
+            </label>
+            <label class="survey_label" for="77">
+              <input
+                class="survey_input"
+                type="radio"
+                name="extra"
+                value="77"
+              />
+              77
+            </label>
+          </div>
+          <input class="submit_button" type="submit" value="Далее" />
+        </form>
+      </section>
+    </main>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const inputs = document.querySelectorAll('input[type="radio"]');
+        const labels = document.querySelectorAll("label");
+        const submitButton = document.querySelector(".submit_button");
+
+        function handleInputChange(event) {
+          labels.forEach((label) => {
+            if (label.htmlFor === event.target.value) {
+              label.classList.add("active");
+              submitButton.classList.add("active");
+            }
+            else {
+              label.classList.remove("active");
+            };
+          });
+        }
+        inputs.forEach((input) => {
+          input.addEventListener("change", handleInputChange);
+        });
+      });
+    </script>
+  </body>
+</html>

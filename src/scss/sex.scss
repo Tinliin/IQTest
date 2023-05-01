@@ -28,11 +28,15 @@ h2 {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  @media (min-width: 600px) {
+    width: 600px;
+    margin: 0 auto;
+  }
 }
 
 .survey_label {
   display: flex;
-  justify-content: start;
+  align-items: center;
   background: rgba(242, 243, 243, 0.15);
   font-family: "PT Serif";
   font-style: normal;
@@ -46,9 +50,20 @@ h2 {
   margin-bottom: 8px;
 }
 
+.survey_label.active {
+  background: #FFC700;
+}
+
 .survey_input {
   margin-right: 39px;
   margin-left: 35px;
+  width: 20px;
+  height: 20px;
+  &:checked {
+    background: #2950c2;
+color: #2950c2;
+    border: 1px solid #272727;
+  }
 }
 
 .submit_button {
@@ -75,38 +90,64 @@ h2 {
 }
 
 .questions_container {
-margin: auto 0;
-    width: 100%;
+  margin: auto 0;
+  width: 100%;
 }
 h5 {
-    font-family: 'PT Serif';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 26px;
-text-align: center;
-letter-spacing: 0.05em;
-text-transform: uppercase;
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 
-color: #FFFFFF;
+  color: #ffffff;
 }
 
 .progress_bar {
-width: 80vw;
-height: 11px;
-background: #F2F3F3;
-mix-blend-mode: normal;
-opacity: 0.59;
-border-radius: 10.5px;
-margin: 17px auto;
+  width: 80vw;
+  height: 11px;
+  background: #f2f3f3;
+  mix-blend-mode: normal;
+  opacity: 0.59;
+  border-radius: 10.5px;
+  margin: 17px auto;
 }
 
 .progress {
-    width:5vw;
-height: 100%;
-left: 30px;
-top: 63px;
+  width: 7.7%;
+  height: 100%;
+  left: 30px;
+  top: 63px;
+  background: #3bde7c;
+  border-radius: 10.5px;
+}
 
-background: #3BDE7C;
-border-radius: 10.5px;
+.progress_age {
+  width: 15%;
+  height: 100%;
+  left: 30px;
+  top: 63px;
+  background: #3bde7c;
+  border-radius: 10.5px;
+}
+
+.progress_extra {
+  width: 23%;
+  height: 100%;
+  left: 30px;
+  top: 63px;
+  background: #3bde7c;
+  border-radius: 10.5px;
+}
+
+.progress_sequence {
+  width: 31%;
+  height: 100%;
+  left: 30px;
+  top: 63px;
+  background: #3bde7c;
+  border-radius: 10.5px;
 }

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=PT+Serif:wght@400;700&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../dist/css/styles.min.css" />
+    <title>IQTest</title>
+  </head>
+  <body>
+    <header>
+      <a class="menu_btn" href="#">
+        <span></span>
+      </a>
+      <img src="../img/brain.png" alt="" />
+      <h2>тест на определение IQ</h2>
+    </header>
+    <main>
+      <section class="survey">
+        <div class="progress_bar"><div class="progress_age"></div></div>
+        <h5>Укажите ваш возраст:</h5>
+        <form class="survey_form" action="./extra.html">
+          <div class="questions_container">
+            <label class="survey_label" for="before 18">
+              <input
+                class="survey_input"
+                type="radio"
+                name="age"
+                value="before 18"
+              />
+              До 18
+            </label>
+            <label class="survey_label" for="from 18 to 28">
+              <input
+                class="survey_input"
+                type="radio"
+                name="age"
+                value="from 18 to 28"
+              />
+              От 18 до 28
+            </label>
+            <label class="survey_label" for="from 29 to 35">
+              <input
+                class="survey_input"
+                type="radio"
+                name="age"
+                value="from 29 to 35"
+              />
+              От 29 до 35
+            </label>
+            <label class="survey_label" for="after 36">
+              <input
+                class="survey_input"
+                type="radio"
+                name="age"
+                value="after 36"
+              />
+              От 36
+            </label>
+          </div>
+
+          <input class="submit_button" type="submit" value="Далее" />
+        </form>
+      </section>
+    </main>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var before18 = document.querySelector('input[value="before 18"]');
+        var from18to28 = document.querySelector('input[value="from 18 to 28"]');
+        var from29to35 = document.querySelector('input[value="from 29 to 35"]');
+        var after36 = document.querySelector('input[value="after 36"]');
+        var submitButton = document.querySelector(".submit_button");
+
+        before18.addEventListener("change", toggleSubmitButton);
+        from18to28.addEventListener("change", toggleSubmitButton);
+        from29to35.addEventListener("change", toggleSubmitButton);
+        after36.addEventListener("change", toggleSubmitButton);
+
+        function toggleSubmitButton() {
+          if (before18.checked || from18to28.checked ||from29to35.checked ||after36.checked) {
+            submitButton.classList.add("active");
+          } else {
+            submitButton.classList.remove("active");
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -23,9 +23,9 @@
     </header>
     <main>
       <section class="survey">
-        <div class="progress_bar"><div class="progress"></div></div>
+        <div class="progress_bar"><div class="progress_extra"></div></div>
         <h5>ваш пол:</h5>
-        <form class="survey_form" action="">
+        <form class="survey_form" action="./age.html">
           <div class="questions_container">
             <label class="survey_label" for="male">
               <input
@@ -36,6 +36,7 @@
               />
               Мужчина
             </label>
+            
             <label class="survey_label" for="female">
               <input
                 class="survey_input"
@@ -46,7 +47,6 @@
               Женщина
             </label>
           </div>
-
           <input class="submit_button" type="submit" value="Далее" />
         </form>
       </section>
@@ -56,15 +56,23 @@
         var maleInput = document.querySelector('input[value="male"]');
         var femaleInput = document.querySelector('input[value="female"]');
         var submitButton = document.querySelector(".submit_button");
-
         maleInput.addEventListener("change", toggleSubmitButton);
         femaleInput.addEventListener("change", toggleSubmitButton);
-
         function toggleSubmitButton() {
-          if (maleInput.checked || femaleInput.checked) {
+          if (maleInput.checked) {
             submitButton.classList.add("active");
-          } else {
+            document.querySelector('label[for="male"]').classList.add("active");
+            document.querySelector('label[for="female"]').classList.remove("active");
+          } 
+          else if (femaleInput.checked) {
+            submitButton.classList.add("active");
+            document.querySelector('label[for="female"]').classList.add("active");
+            document.querySelector('label[for="male"]').classList.remove("active");
+          } 
+          else {
             submitButton.classList.remove("active");
+            document.querySelector('label[for="male"]').classList.remove("active");
+            document.querySelector('label[for="female"]').classList.remove("active");
           }
         }
       });

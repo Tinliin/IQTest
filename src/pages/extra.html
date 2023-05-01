@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=PT+Serif:wght@400;700&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../dist/css/styles.min.css" />
+    <title>IQTest</title>
+  </head>
+  <body>
+    <header>
+      <a class="menu_btn" href="#">
+        <span></span>
+      </a>
+      <img src="../img/brain.png" alt="" />
+      <h2>тест на определение IQ</h2>
+    </header>
+    <main>
+      <section class="survey">
+        <div class="progress_bar"><div class="progress_extra"></div></div>
+        <h5>Выберите лишнее:</h5>
+        <form class="survey_form" action="./sequence.html">
+          <div class="questions_container">
+            <label class="survey_label" for="Home">
+              <input
+                class="survey_input"
+                type="radio"
+                name="extra"
+                value="Home"
+              />
+              Дом
+            </label>
+            <label class="survey_label" for="hut">
+              <input
+                class="survey_input"
+                type="radio"
+                name="extra"
+                value="hut"
+              />
+              Шалаш
+            </label>
+            <label class="survey_label" for="bungalo">
+              <input
+                class="survey_input"
+                type="radio"
+                name="extra"
+                value="bungalo"
+              />
+              Бунгало
+            </label>
+            <label class="survey_label" for="bench">
+              <input
+                class="survey_input"
+                type="radio"
+                name="extra"
+                value="bench"
+              />
+              Скамейка
+            </label>
+            <label class="survey_label" for="hovel">
+              <input
+                class="survey_input"
+                type="radio"
+                name="extra"
+                value="hovel"
+              />
+              Хижина
+            </label>
+          </div>
+
+          <input class="submit_button" type="submit" value="Далее" />
+        </form>
+      </section>
+    </main>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const inputs = document.querySelectorAll('input[type="radio"]');
+        const labels = document.querySelectorAll("label");
+        const submitButton = document.querySelector(".submit_button");
+
+        function handleInputChange(event) {
+          labels.forEach((label) => {
+            if (label.htmlFor === event.target.value) {
+              label.classList.add("active");
+              submitButton.classList.add("active");
+            }
+            else {
+              label.classList.remove("active");
+            };
+          });
+        }
+        inputs.forEach((input) => {
+          input.addEventListener("change", handleInputChange);
+        });
+      });
+    </script>
+  </body>
+</html>

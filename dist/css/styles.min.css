@@ -572,10 +572,23 @@ template {
 .quote {
   background-image: url(../img/god.png);
   background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (min-width: 600px) {
+  .quote {
+    height: 100vh;
+    background-position: center;
+  }
 }
 
 .gradient {
   background: radial-gradient(84.34% 50.29% at 48.75% 49.71%, #2950C2 0%, rgba(38, 91, 199, 0.96) 40.62%, rgba(39, 98, 187, 0) 85.42%);
+}
+@media (min-width: 600px) {
+  .gradient {
+    width: 600px;
+    margin: auto auto;
+  }
 }
 
 .openquote {
@@ -584,6 +597,11 @@ template {
 
 .closequote {
   margin: 0 6.8vw 6.1vh 75vw;
+}
+@media (min-width: 600px) {
+  .closequote {
+    margin-left: 500px;
+  }
 }
 
 .quote_text {
@@ -628,10 +646,16 @@ h2 {
   align-items: center;
   justify-content: space-between;
 }
+@media (min-width: 600px) {
+  .survey_form {
+    width: 600px;
+    margin: 0 auto;
+  }
+}
 
 .survey_label {
   display: flex;
-  justify-content: start;
+  align-items: center;
   background: rgba(242, 243, 243, 0.15);
   font-family: "PT Serif";
   font-style: normal;
@@ -645,9 +669,20 @@ h2 {
   margin-bottom: 8px;
 }
 
+.survey_label.active {
+  background: #FFC700;
+}
+
 .survey_input {
   margin-right: 39px;
   margin-left: 35px;
+  width: 20px;
+  height: 20px;
+}
+.survey_input:checked {
+  background: #2950c2;
+  color: #2950c2;
+  border: 1px solid #272727;
 }
 
 .submit_button {
@@ -688,13 +723,13 @@ h5 {
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .progress_bar {
   width: 80vw;
   height: 11px;
-  background: #F2F3F3;
+  background: #f2f3f3;
   mix-blend-mode: normal;
   opacity: 0.59;
   border-radius: 10.5px;
@@ -702,10 +737,37 @@ h5 {
 }
 
 .progress {
-  width: 5vw;
+  width: 7.7%;
   height: 100%;
   left: 30px;
   top: 63px;
-  background: #3BDE7C;
+  background: #3bde7c;
+  border-radius: 10.5px;
+}
+
+.progress_age {
+  width: 15%;
+  height: 100%;
+  left: 30px;
+  top: 63px;
+  background: #3bde7c;
+  border-radius: 10.5px;
+}
+
+.progress_extra {
+  width: 23%;
+  height: 100%;
+  left: 30px;
+  top: 63px;
+  background: #3bde7c;
+  border-radius: 10.5px;
+}
+
+.progress_sequence {
+  width: 31%;
+  height: 100%;
+  left: 30px;
+  top: 63px;
+  background: #3bde7c;
   border-radius: 10.5px;
 }
