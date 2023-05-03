@@ -23,81 +23,46 @@
     </header>
     <main>
       <section class="survey">
-        <div class="progress_bar"><div class="progress" style="width: 38.5%;"></div></div>
-        <h5>Выберите цвет, который сейчас наиболее Вам приятен:</h5>
-        <form class="survey_form" action="./colors2.html">
-          <div class="sqaers_container">
-            <label class="colorfull_square gray" for="gray">
+        <div class="progress_bar"><div class="progress" style="width: 61.6%;"></div></div>
+        <h5>Выберите правильную фигуру из четырёх пронумерованных.</h5>
+        <img src="../img/stick_figure.png" alt="Человечки" width="185px" height="235px">
+        <form class="survey_form" action="./important.html">
+          <div class="white_sqaers_container">
+            <label class="white_square" for="1">
               <input
-                class="colors_input"
+                class="white_square_input"
                 type="radio"
                 name="colors"
-                value="gray"
+                value="1"
               />
+              1
             </label>
-            <label class="colorfull_square blue" for="blue">
+            <label class="white_square" for="2">
               <input
-                class="colors_input"
+                class="white_square_input"
                 type="radio"
                 name="colors"
-                value="blue"
+                value="2"
               />
+              2
             </label>
-            <label class="colorfull_square green" for="green">
+            <label class="white_square" for="3">
               <input
-                class="colors_input"
+                class="white_square_input"
                 type="radio"
                 name="colors"
-                value="green"
+                value="3"
               />
+              3
             </label>
-            <label class="colorfull_square red" for="red">
+            <label class="white_square" for="4">
               <input
-                class="colors_input"
+                class="white_square_input"
                 type="radio"
                 name="colors"
-                value="red"
+                value="4"
               />
-            </label>
-            <label class="colorfull_square yellow" for="yellow">
-              <input
-                class="colors_input"
-                type="radio"
-                name="colors"
-                value="yellow"
-              />
-            </label>
-            <label class="colorfull_square brown" for="brown">
-              <input
-                class="colors_input"
-                type="radio"
-                name="colors"
-                value="brown"
-              />
-            </label>
-            <label class="colorfull_square black" for="black">
-              <input
-                class="colors_input"
-                type="radio"
-                name="colors"
-                value="black"
-              />
-            </label>
-            <label class="colorfull_square purple" for="purple">
-              <input
-                class="colors_input"
-                type="radio"
-                name="colors"
-                value="purple"
-              />
-            </label>
-            <label class="colorfull_square aqua" for="aqua">
-              <input
-                class="colors_input"
-                type="radio"
-                name="colors"
-                value="aqua"
-              />
+              4
             </label>
           </div>
           <input class="submit_button" type="submit" value="Далее" />
@@ -113,10 +78,10 @@
           const selectedValue = event.target.value;
           labels.forEach((label) => {
             if (label.getAttribute("for") === selectedValue) {
-              label.classList.add("active_square");
+              label.classList.add("active_whie_square");
               submitButton.classList.add("active");
             } else {
-              label.classList.remove("active_square");
+              label.classList.remove("active_whie_square");
             }
           });
         }

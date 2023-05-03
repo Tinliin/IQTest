@@ -1,3 +1,68 @@
+.sqaers_container {
+  display: flex;
+  gap: 21px;
+  width: 270px;
+  flex-wrap: wrap;
+}
+
+.colors_input {
+  opacity: 0;
+  width: 64px;
+  height: 64px;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.colorfull_square {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  border: 6px solid transparent;
+  cursor: pointer;
+}
+.colorfull_square:hover {
+  border-color: #FFC700;
+}
+
+.active_square {
+  border: 6px solid #FFC700;
+}
+
+.gray {
+  background: #A8A8A8;
+}
+
+.blue {
+  background: #0000A9;
+}
+
+.green {
+  background: #00A701;
+}
+
+.red {
+  background: #F60100;
+}
+
+.yellow {
+  background: #FDFF19;
+}
+
+.brown {
+  background: #A95403;
+}
+
+.black {
+  background: #000000;
+}
+
+.purple {
+  background: #850068;
+}
+
+.aqua {
+  background: #46B2AC;
+}
 .description {
   background-image: url(../img/rain_bk2.png);
   background-size: cover;
@@ -243,6 +308,7 @@ h3 {
   text-decoration: none;
   margin-bottom: 11px;
 }
+
 .more {
   display: flex;
   flex-direction: column;
@@ -621,6 +687,7 @@ template {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   height: 94vh;
 }
 
@@ -664,6 +731,7 @@ h2 {
   line-height: 58px;
   letter-spacing: 0.05em;
   text-transform: capitalize;
+  text-transform: none;
   color: #ffffff;
   width: 100%;
   margin-bottom: 8px;
@@ -701,6 +769,7 @@ h2 {
   text-transform: uppercase;
   color: #8e8e8e;
   margin-bottom: 25px;
+  cursor: pointer;
 }
 
 .submit_button.active {
@@ -737,37 +806,49 @@ h5 {
 }
 
 .progress {
-  width: 7.7%;
   height: 100%;
   left: 30px;
   top: 63px;
   background: #3bde7c;
   border-radius: 10.5px;
 }
-
-.progress_age {
-  width: 15%;
-  height: 100%;
-  left: 30px;
-  top: 63px;
-  background: #3bde7c;
-  border-radius: 10.5px;
+.white_sqaers_container {
+  display: flex;
+  justify-content: space-between;
+  width: 270px;
+  margin-top: 45px;
 }
 
-.progress_extra {
-  width: 23%;
-  height: 100%;
-  left: 30px;
-  top: 63px;
-  background: #3bde7c;
-  border-radius: 10.5px;
+.white_square_input {
+  opacity: 0;
+  width: 41px;
+  height: 42px;
+  z-index: 5;
+  cursor: pointer;
 }
 
-.progress_sequence {
-  width: 31%;
-  height: 100%;
-  left: 30px;
-  top: 63px;
-  background: #3bde7c;
-  border-radius: 10.5px;
+.white_square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 41px;
+  height: 42px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  background: #ffffff;
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 49px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #0d0c11;
+}
+.white_square:hover {
+  border-color: #ffc700;
+}
+
+.active_whie_square {
+  border-color: #ffc700;
 }

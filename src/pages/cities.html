@@ -23,48 +23,65 @@
     </header>
     <main>
       <section class="survey">
-        <div class="progress_bar"><div class="progress" style="width: 15.4%;"></div></div>
-        <h5>Укажите ваш возраст:</h5>
-        <form class="survey_form" action="./extra.html">
+        <div class="progress_bar"><div class="progress" style="width: 53.9%;"></div></div>
+        <h5>Какой из городов лишний?</h5>
+        <form class="survey_form" action="./stick_figure.html">
           <div class="questions_container">
-            <label class="survey_label" for="before 18">
+            <label class="survey_label" for="Washington">
               <input
                 class="survey_input"
                 type="radio"
-                name="age"
-                value="before 18"
+                name="sequence"
+                value="Washington"
               />
-              До 18
+              Вашингтон
             </label>
-            <label class="survey_label" for="from 18 to 28">
+            <label class="survey_label" for="London">
               <input
                 class="survey_input"
                 type="radio"
-                name="age"
-                value="from 18 to 28"
+                name="sequence"
+                value="London"
               />
-              От 18 до 28
+              Лондон
             </label>
-            <label class="survey_label" for="from 29 to 35">
+            <label class="survey_label" for="Paris">
               <input
                 class="survey_input"
                 type="radio"
-                name="age"
-                value="from 29 to 35"
+                name="sequence"
+                value="Paris"
               />
-              От 29 до 35
+              Париж
             </label>
-            <label class="survey_label" for="after 36">
+            <label class="survey_label" for="New-York">
               <input
                 class="survey_input"
                 type="radio"
-                name="age"
-                value="after 36"
+                name="sequence"
+                value="New-York"
               />
-              От 36
+              Нью_Йорк
+            </label>
+            <label class="survey_label" for="Moscow">
+              <input
+                class="survey_input"
+                type="radio"
+                name="sequence"
+                value="Moscow"
+              />
+              Москва
+            </label>
+            <label class="survey_label" for="Ottava">
+              <input
+                class="survey_input"
+                type="radio"
+                name="extra"
+                value="Ottava"
+              />
+              Оттава
             </label>
           </div>
-
           <input class="submit_button" type="submit" value="Далее" />
         </form>
       </section>

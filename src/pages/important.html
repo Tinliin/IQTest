@@ -18,54 +18,48 @@
       <a class="menu_btn" href="#">
         <span></span>
       </a>
-      <img src="../img/brain.png" alt="" />
+      <img src="../img/brain.png" alt="brains" />
       <h2>тест на определение IQ</h2>
     </header>
     <main>
       <section class="survey">
-        <div class="progress_bar"><div class="progress" style="width: 15.4%;"></div></div>
-        <h5>Укажите ваш возраст:</h5>
-        <form class="survey_form" action="./extra.html">
+        <div class="progress_bar"><div class="progress" style="width: 69.3%;"></div></div>
+        <h5>Вам привычнее и важнее:</h5>
+        <form class="survey_form" action="./stick_figure.html">
           <div class="questions_container">
-            <label class="survey_label" for="before 18">
+            <label class="survey_label" for="enjoy" style="line-height: 20px; margin-bottom: 19px; padding: 19px 0;">
               <input
                 class="survey_input"
                 type="radio"
-                name="age"
-                value="before 18"
+                name="sequence"
+                value="enjoy"
               />
-              До 18
+              Наслаждаться
+каждой минутой 
+проведенного времени
             </label>
-            <label class="survey_label" for="from 18 to 28">
+            <label class="survey_label" for="future" style="line-height: 20px; margin-bottom: 19px; padding: 19px 0;">
               <input
                 class="survey_input"
                 type="radio"
-                name="age"
-                value="from 18 to 28"
+                name="sequence"
+                value="future"
               />
-              От 18 до 28
+              Быть устремленными 
+мыслями в будущее
             </label>
-            <label class="survey_label" for="from 29 to 35">
+            <label class="survey_label" for="past" style="line-height: 20px; margin-bottom: 19px; padding: 19px 0;">
               <input
                 class="survey_input"
                 type="radio"
-                name="age"
-                value="from 29 to 35"
+                name="sequence"
+                value="past"
               />
-              От 29 до 35
+              Учитывать в ежедневной 
+практике прошлый опыт
             </label>
-            <label class="survey_label" for="after 36">
-              <input
-                class="survey_input"
-                type="radio"
-                name="age"
-                value="after 36"
-              />
-              От 36
-            </label>
-          </div>
-
-          <input class="submit_button" type="submit" value="Далее" />
+            </div>
+            <input class="submit_button" type="submit" value="Далее" />
         </form>
       </section>
     </main>

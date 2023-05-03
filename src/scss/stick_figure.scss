@@ -1,0 +1,40 @@
+.white_sqaers_container {
+  display: flex;
+  justify-content: space-between;
+  width: 270px;
+  margin-top: 45px;
+}
+
+.white_square_input {
+  opacity: 0;
+  width: 41px;
+  height: 42px;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.white_square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 41px;
+  height: 42px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  background: #ffffff;
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 49px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #0d0c11;
+  &:hover {
+    border-color: #ffc700;
+  }
+}
+
+.active_whie_square {
+    border-color: #ffc700;
+}

@@ -1,0 +1,66 @@
+.sqaers_container {
+  display: flex;
+  gap: 21px;
+  width: 270px;
+  flex-wrap: wrap;
+}
+
+.colors_input {
+opacity: 0;
+width: 64px;
+height: 64px;
+z-index: 5;
+cursor: pointer;
+}
+
+
+.colorfull_square {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  border: 6px solid transparent;
+  cursor: pointer;
+  &:hover {
+    border-color: #FFC700;
+  }
+}
+
+.active_square {
+  border: 6px solid #FFC700;
+}
+
+.gray {
+  background: #A8A8A8;
+}
+
+.blue {
+  background: #0000A9;
+}
+
+.green {
+  background: #00A701;
+}
+
+.red {
+  background: #F60100;
+}
+
+.yellow {
+  background: #FDFF19;
+}
+
+.brown {
+  background: #A95403;
+}
+
+.black {
+  background: #000000;
+}
+
+.purple {
+  background: #850068;
+}
+
+.aqua {
+  background: #46B2AC;
+}
