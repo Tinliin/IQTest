@@ -1,11 +1,12 @@
 .white_sqaers_container {
   display: flex;
   justify-content: space-between;
-  width: 270px;
+  width: 280px;
   margin-top: 45px;
 }
 
 .white_square_input {
+  position: relative;
   opacity: 0;
   width: 41px;
   height: 42px;
@@ -13,15 +14,32 @@
   cursor: pointer;
 }
 
+.horizontal_line {
+height: 4px;
+width: 100%;
+color: #F2F3F3;
+margin: 24px 0 22px;
+background: #F2F3F3;
+opacity: 0.15;
+} 
+
 .white_square {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  box-sizing: border-box;
+  position: relative;
   width: 41px;
   height: 42px;
-  border: 2px solid transparent;
+  border: 6px solid transparent;
   cursor: pointer;
   background: #ffffff;
+    &:hover {
+    border-color: #ffc700;
+  }
+}
+
+.white_square_text {
+  position: absolute;
+  left: -2px;
+  top: -2px;
   font-family: "PT Serif";
   font-style: normal;
   font-weight: 400;
@@ -30,9 +48,7 @@
   text-align: center;
   text-transform: capitalize;
   color: #0d0c11;
-  &:hover {
-    border-color: #ffc700;
-  }
+  width: 100%;
 }
 
 .active_whie_square {

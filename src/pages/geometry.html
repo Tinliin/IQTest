@@ -18,55 +18,49 @@
       <a class="menu_btn" href="#">
         <span></span>
       </a>
-      <img src="../img/brain.png" alt="brains" />
+      <img src="../img/brain.png" alt="" />
       <h2>тест на определение IQ</h2>
     </header>
     <main>
       <section class="survey">
         <div class="progress_bar">
-          <div class="progress" style="width: 69.3%"></div>
+          <div class="progress" style="width: 77%"></div>
         </div>
-        <h5>Вам привычнее и важнее:</h5>
-        <form class="survey_form" action="./geometry.html">
+        <h5>Какое определение, по-Вашему, больше подходит к этому геометрическому изображению:</h5>
+        <img
+          src="../img/gepmetry.png"
+          alt="Человечки"
+          width="173px"
+          height="115px"
+        />
+        <form class="survey_form" action="./star1.html">
           <div class="questions_container">
-            <label
-              class="survey_label"
-              for="enjoy"
-              style="line-height: 20px; margin-bottom: 19px; padding: 19px 0"
-            >
+            <label class="survey_label" for="answer1">
               <input
                 class="survey_input"
                 type="radio"
                 name="sequence"
-                value="enjoy"
+                value="answer1"
               />
-              Наслаждаться каждой минутой проведенного времени
+              Оно остроконечное
             </label>
-            <label
-              class="survey_label"
-              for="future"
-              style="line-height: 20px; margin-bottom: 19px; padding: 19px 0"
-            >
+            <label class="survey_label" for="answer2">
               <input
                 class="survey_input"
                 type="radio"
                 name="sequence"
-                value="future"
+                value="answer2"
               />
-              Быть устремленными мыслями в будущее
+              Оно устойчиво
             </label>
-            <label
-              class="survey_label"
-              for="past"
-              style="line-height: 20px; margin-bottom: 19px; padding: 19px 0"
-            >
+            <label class="survey_label" for="answer3">
               <input
                 class="survey_input"
                 type="radio"
                 name="sequence"
-                value="past"
+                value="answer3"
               />
-              Учитывать в ежедневной практике прошлый опыт
+              Оно находится в состоянии равновесия
             </label>
           </div>
           <input class="submit_button" type="submit" value="Далее" />
@@ -78,14 +72,14 @@
         const inputs = document.querySelectorAll('input[type="radio"]');
         const labels = document.querySelectorAll("label");
         const submitButton = document.querySelector(".submit_button");
-
         function handleInputChange(event) {
+          const selectedValue = event.target.value;
           labels.forEach((label) => {
-            if (label.htmlFor === event.target.value) {
-              label.classList.add("active");
+            if (label.getAttribute("for") === selectedValue) {
+              label.classList.add("active_whie_square");
               submitButton.classList.add("active");
             } else {
-              label.classList.remove("active");
+              label.classList.remove("active_whie_square");
             }
           });
         }
