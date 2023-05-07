@@ -727,7 +727,7 @@ template {
 }
 @media (min-width: 600px) {
   .gradient {
-    margin: auto auto;
+    padding: 40vh;
   }
 }
 
@@ -740,7 +740,7 @@ template {
 }
 @media (min-width: 600px) {
   .closequote {
-    margin-left: 500px;
+    margin-left: 55vw;
   }
 }
 
