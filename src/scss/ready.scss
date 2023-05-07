@@ -1,0 +1,136 @@
+h6 {
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.result {
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  width: 75%;
+}
+
+.get_result {
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #3bde7c;
+  margin: 22px 0 12px;
+}
+
+.instruction {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #1c2741;
+  border-radius: 6px;
+  width: 75%;
+  margin: 0;
+}
+
+.hurry {
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #3bde7c;
+}
+
+.call_button {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  margin-bottom: auto;
+  padding: 15px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  width: 290px;
+  height: 92px;
+  left: 15px;
+  top: 422px;
+  background: #eb1b00;
+  border-radius: 5px;
+}
+
+.call_text {
+  padding-left: 18px;
+}
+
+.visible {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 7px;
+  line-height: 9px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  transition: 1000ms;
+}
+
+.hidden {
+  display: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 7px;
+  line-height: 9px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  transition: 1000ms;
+
+}
+
+.results {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: auto;
+}
+.property {
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+margin: 0 2px;
+  // text-align: center;
+  color: #ffffff;
+
+}

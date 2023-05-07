@@ -18,6 +18,14 @@
       <a class="menu_btn" href="#">
         <span></span>
       </a>
+      <ul class="main_menu">
+        <a class="close_btn" href="#">
+          <span></span>
+        </a>
+        <li class="menu_item"><a class="menu_link" href="./index.html">Главная</a></li>
+        <li class="menu_item"><a class="menu_link" href="./index.html">Информация о тесте</a></li>
+        <li class="menu_item"><a class="menu_link" href="./index.html">пройти тест</a></li>
+      </ul>
     </header>
     <main>
       <section class="invite">
@@ -99,5 +107,16 @@
         </footer>
       </section>
     </main>
+    <script>
+const burgerBtn = document.querySelector(".menu_btn");
+const mainMenu = document.querySelector(".main_menu");
+const closeBtn = document.querySelector(".close_btn");
+burgerBtn.addEventListener("click", () => {
+mainMenu.style.display = "flex";
+});
+closeBtn.addEventListener("click", () => {
+mainMenu.style.display = "none";
+});
+    </script>
   </body>
 </html>

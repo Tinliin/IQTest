@@ -26,8 +26,6 @@ opacity: 0.15;
 .white_square {
   box-sizing: border-box;
   position: relative;
-  width: 41px;
-  height: 42px;
   border: 6px solid transparent;
   cursor: pointer;
   background: #ffffff;
@@ -38,8 +36,8 @@ opacity: 0.15;
 
 .white_square_text {
   position: absolute;
-  left: -2px;
-  top: -2px;
+  left: 0;
+  top: 0;
   font-family: "PT Serif";
   font-style: normal;
   font-weight: 400;

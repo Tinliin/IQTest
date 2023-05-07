@@ -18,14 +18,37 @@
       <a class="menu_btn" href="#">
         <span></span>
       </a>
-      <img src="../img/brain.png" alt="" />
+      <a href="../../index.html">
+        <img src="../img/brain.png" alt="brain" width="48px" height="47px" />
+      </a>
       <h2>тест на определение IQ</h2>
+      <ul class="main_menu">
+        <a class="close_btn" href="#">
+          <span></span>
+        </a>
+        <li class="menu_item">
+          <a class="menu_link" href="./index.html">Главная</a>
+        </li>
+        <li class="menu_item">
+          <a class="menu_link" href="./index.html">Информация о тесте</a>
+        </li>
+        <li class="menu_item">
+          <a class="menu_link" href="./index.html">пройти тест</a>
+        </li>
+      </ul>
     </header>
     <main>
       <section class="survey">
-        <div class="progress_bar"><div class="progress" style="width: 61.6%;"></div></div>
+        <div class="progress_bar">
+          <div class="progress" style="width: 61.6%"></div>
+        </div>
         <h5>Выберите правильную фигуру из четырёх пронумерованных.</h5>
-        <img src="../img/stick_figure.png" alt="Человечки" width="185px" height="235px">
+        <img
+          src="../img/stick_figure.png"
+          alt="Человечки"
+          width="185px"
+          height="235px"
+        />
         <form class="survey_form" action="./important.html">
           <div class="white_sqaers_container">
             <label class="white_square" for="1">
@@ -37,7 +60,6 @@
                 value="1"
               />
               <span class="white_square_text">1</span>
-              
             </label>
             <label class="white_square" for="2">
               <input
@@ -47,7 +69,6 @@
                 value="2"
               />
               <span class="white_square_text">2</span>
-              
             </label>
             <label class="white_square" for="3">
               <input
@@ -57,7 +78,6 @@
                 value="3"
               />
               <span class="white_square_text">3</span>
-              
             </label>
             <label class="white_square" for="4">
               <input
@@ -67,7 +87,6 @@
                 value="4"
               />
               <span class="white_square_text">4</span>
-              
             </label>
           </div>
           <input class="submit_button" type="submit" value="Далее" />
@@ -93,6 +112,15 @@
         inputs.forEach((input) => {
           input.addEventListener("change", handleInputChange);
         });
+      });
+      const burgerBtn = document.querySelector(".menu_btn");
+      const mainMenu = document.querySelector(".main_menu");
+      const closeBtn = document.querySelector(".close_btn");
+      burgerBtn.addEventListener("click", () => {
+        mainMenu.style.display = "flex";
+      });
+      closeBtn.addEventListener("click", () => {
+        mainMenu.style.display = "none";
       });
     </script>
   </body>

@@ -202,6 +202,82 @@ header {
   content: "";
   transform: translateY(7px);
 }
+
+.main_menu {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  flex-direction: column;
+  width: 100%;
+  height: 100wh;
+  background-color: #181818;
+  margin: 0;
+  padding-left: 4vw;
+}
+
+.menu_item {
+  list-style: none;
+  margin-bottom: 27px;
+}
+
+.menu_link {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.menu_link:hover {
+  color: #F4CE0C;
+}
+
+.close_btn {
+  display: block;
+  width: 26px;
+  height: 18px;
+  position: relative;
+  margin: 18px 13px 20vh auto;
+}
+
+.close_btn span,
+.close_btn span::before,
+.close_btn span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 24px;
+  height: 3px;
+  top: 50%;
+  margin-top: -1.5px;
+  background: #696969;
+  margin-right: 9px;
+}
+
+.close_btn span::before {
+  content: "";
+  transform: rotate(0.12turn);
+}
+
+.close_btn span::after {
+  content: "";
+  transform: rotate(-0.12turn);
+}
+
+.close_btn span {
+  background-color: #181818;
+}
+
+.close_btn span:hover::before {
+  background: #FFC700;
+}
+
+.close_btn span:hover::after {
+  background: #FFC700;
+}
 .invite {
   background-image: url(../img/rain_bk.jpg);
   background-size: cover;
@@ -308,7 +384,6 @@ h3 {
   text-decoration: none;
   margin-bottom: 11px;
 }
-
 .more {
   display: flex;
   flex-direction: column;
@@ -652,7 +727,6 @@ template {
 }
 @media (min-width: 600px) {
   .gradient {
-    width: 600px;
     margin: auto auto;
   }
 }
@@ -681,6 +755,140 @@ template {
   margin: 0 10vw;
   color: #ffffff;
 }
+h6 {
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.result {
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  width: 75%;
+}
+
+.get_result {
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #3bde7c;
+  margin: 22px 0 12px;
+}
+
+.instruction {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #1c2741;
+  border-radius: 6px;
+  width: 75%;
+  margin: 0;
+}
+
+.hurry {
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #3bde7c;
+}
+
+.call_button {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  margin-bottom: auto;
+  padding: 15px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  width: 290px;
+  height: 92px;
+  left: 15px;
+  top: 422px;
+  background: #eb1b00;
+  border-radius: 5px;
+}
+
+.call_text {
+  padding-left: 18px;
+}
+
+.visible {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 7px;
+  line-height: 9px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  transition: 1000ms;
+}
+
+.hidden {
+  display: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 7px;
+  line-height: 9px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  transition: 1000ms;
+}
+
+.results {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: auto;
+}
+
+.property {
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  margin: 0 2px;
+  color: #ffffff;
+}
 .survey {
   background-image: url(../img/rain_bk2.png);
   background-size: cover;
@@ -688,7 +896,7 @@ template {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 94vh;
+  height: 93.5vh;
 }
 
 h2 {
@@ -813,6 +1021,31 @@ h5 {
   background: #3bde7c;
   border-radius: 10.5px;
 }
+
+.processing {
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: auto;
+  width: 80vw;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+#spinner {
+  animation: spin 2s linear infinite;
+}
 .white_sqaers_container {
   display: flex;
   justify-content: space-between;
@@ -841,8 +1074,6 @@ h5 {
 .white_square {
   box-sizing: border-box;
   position: relative;
-  width: 41px;
-  height: 42px;
   border: 6px solid transparent;
   cursor: pointer;
   background: #ffffff;
@@ -853,8 +1084,8 @@ h5 {
 
 .white_square_text {
   position: absolute;
-  left: -2px;
-  top: -2px;
+  left: 0;
+  top: 0;
   font-family: "PT Serif";
   font-style: normal;
   font-weight: 400;

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=PT+Serif:wght@400;700&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../dist/css/styles.min.css" />
+    <title>IQTest</title>
+  </head>
+  <body>
+    <header>
+      <a class="menu_btn" href="#">
+        <span></span>
+      </a>
+      <a href="../../index.html">
+        <img src="../img/brain.png" alt="brain" width="48px" height="47px" />
+      </a>
+      <h2>тест на определение IQ</h2>
+      <ul class="main_menu">
+        <a class="close_btn" href="#">
+          <span></span>
+        </a>
+        <li class="menu_item"><a class="menu_link" href="./index.html">Главная</a></li>
+        <li class="menu_item"><a class="menu_link" href="./index.html">Информация о тесте</a></li>
+        <li class="menu_item"><a class="menu_link" href="./index.html">пройти тест</a></li>
+      </ul>
+    </header>
+    <main>
+      <section class="survey">
+        <h6>Ваш результат рассчитан:</h6>
+        <p class="result">
+          <u>вы относитесь к 3%</u> респондентов, чей уровень интеллекта более
+          чем на 15 пунктов отличается от среднего в большую или меньшую
+          сторону!
+        </p>
+        <p class="get_result">Скорее получите свой результат!</p>
+        <p class="instruction">
+          В целях защиты персональных данных результат теста, их подробная
+          интерпретация и рекомендации доступны в виде голосового сообщения по
+          звонку с вашего мобильного телефона
+        </p>
+        <p class="hurry">Звоните скорее, запись доступна всего</p>
+        <p
+          class="hurry"
+          id="count_down"
+          style="font-size: 20px; margin-top: -1px"
+        ></p>
+        <a class="call_button" href="#"
+          ><img src="../img/call.svg" alt="Call" /><span class="call_text"
+            >позвонить и прослушать результат</span
+          >
+        </a>
+        <div class="results" id="results"></div>
+        <footer>
+          <p class="visible">
+            TERMENI SI CONDITII: ACESTA ESTE UN SERVICIU DE DIVERTISMENT. PRIN
+            FOLOSIREA LUI
+          </p>
+          <p class="hidden" id="hidden">DECLARATI CA AVETI 18 ANI IMPLINITI,</p>
+        </footer>
+      </section>
+    </main>
+
+    <script src="../js/ready.js">
+      const burgerBtn = document.querySelector(".menu_btn");
+      const mainMenu = document.querySelector(".main_menu");
+      const closeBtn = document.querySelector(".close_btn");
+      burgerBtn.addEventListener("click", () => {
+      mainMenu.style.display = "flex";
+      });
+      closeBtn.addEventListener("click", () => {
+      mainMenu.style.display = "none";
+      });
+    </script>
+  </body>
+</html>

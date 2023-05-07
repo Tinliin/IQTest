@@ -18,8 +18,24 @@
       <a class="menu_btn" href="#">
         <span></span>
       </a>
-      <img src="../img/brain.png" alt="" />
+      <a href="../../index.html">
+        <img src="../img/brain.png" alt="brain" width="48px" height="47px" />
+      </a>
       <h2>тест на определение IQ</h2>
+      <ul class="main_menu">
+        <a class="close_btn" href="#">
+          <span></span>
+        </a>
+        <li class="menu_item">
+          <a class="menu_link" href="./index.html">Главная</a>
+        </li>
+        <li class="menu_item">
+          <a class="menu_link" href="./index.html">Информация о тесте</a>
+        </li>
+        <li class="menu_item">
+          <a class="menu_link" href="../pages/sex.html">пройти тест</a>
+        </li>
+      </ul>
     </header>
     <main>
       <section class="survey">
@@ -28,7 +44,7 @@
         </div>
         <h5>Выберите правильную фигуру из четырёх пронумерованных.</h5>
         <img src="../img/starr1.png" alt="Star" width="228px" height="207px" />
-        <hr class="horizontal_line">
+        <hr class="horizontal_line" />
         <form class="survey_form" action="./important.html">
           <div class="white_sqaers_container">
             <label class="white_square" for="34">
@@ -65,7 +81,7 @@
                 type="radio"
                 name="colors"
                 value="44"
-              /> 
+              />
               <span class="white_square_text">44</span>
             </label>
             <label class="white_square" for="66">
@@ -110,6 +126,15 @@
         inputs.forEach((input) => {
           input.addEventListener("change", handleInputChange);
         });
+      });
+      const burgerBtn = document.querySelector(".menu_btn");
+      const mainMenu = document.querySelector(".main_menu");
+      const closeBtn = document.querySelector(".close_btn");
+      burgerBtn.addEventListener("click", () => {
+        mainMenu.style.display = "flex";
+      });
+      closeBtn.addEventListener("click", () => {
+        mainMenu.style.display = "none";
       });
     </script>
   </body>

@@ -18,12 +18,30 @@
       <a class="menu_btn" href="#">
         <span></span>
       </a>
-      <img src="../img/brain.png" alt="" />
+      <a href="../../index.html">
+        <img src="../img/brain.png" alt="brain" width="48px" height="47px" />
+      </a>
       <h2>тест на определение IQ</h2>
+      <ul class="main_menu">
+        <a class="close_btn" href="#">
+          <span></span>
+        </a>
+        <li class="menu_item">
+          <a class="menu_link" href="./index.html">Главная</a>
+        </li>
+        <li class="menu_item">
+          <a class="menu_link" href="./index.html">Информация о тесте</a>
+        </li>
+        <li class="menu_item">
+          <a class="menu_link" href="./index.html">пройти тест</a>
+        </li>
+      </ul>
     </header>
     <main>
       <section class="survey">
-        <div class="progress_bar"><div class="progress" style="width: 7.7%;"></div></div>
+        <div class="progress_bar">
+          <div class="progress" style="width: 7.7%"></div>
+        </div>
         <h5>ваш пол:</h5>
         <form class="survey_form" action="./age.html">
           <div class="questions_container">
@@ -36,7 +54,7 @@
               />
               Мужчина
             </label>
-            
+
             <label class="survey_label" for="female">
               <input
                 class="survey_input"
@@ -62,19 +80,36 @@
           if (maleInput.checked) {
             submitButton.classList.add("active");
             document.querySelector('label[for="male"]').classList.add("active");
-            document.querySelector('label[for="female"]').classList.remove("active");
-          } 
-          else if (femaleInput.checked) {
+            document
+              .querySelector('label[for="female"]')
+              .classList.remove("active");
+          } else if (femaleInput.checked) {
             submitButton.classList.add("active");
-            document.querySelector('label[for="female"]').classList.add("active");
-            document.querySelector('label[for="male"]').classList.remove("active");
-          } 
-          else {
+            document
+              .querySelector('label[for="female"]')
+              .classList.add("active");
+            document
+              .querySelector('label[for="male"]')
+              .classList.remove("active");
+          } else {
             submitButton.classList.remove("active");
-            document.querySelector('label[for="male"]').classList.remove("active");
-            document.querySelector('label[for="female"]').classList.remove("active");
+            document
+              .querySelector('label[for="male"]')
+              .classList.remove("active");
+            document
+              .querySelector('label[for="female"]')
+              .classList.remove("active");
           }
         }
+      });
+      const burgerBtn = document.querySelector(".menu_btn");
+      const mainMenu = document.querySelector(".main_menu");
+      const closeBtn = document.querySelector(".close_btn");
+      burgerBtn.addEventListener("click", () => {
+        mainMenu.style.display = "flex";
+      });
+      closeBtn.addEventListener("click", () => {
+        mainMenu.style.display = "none";
       });
     </script>
   </body>

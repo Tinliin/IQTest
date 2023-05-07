@@ -18,14 +18,25 @@
       <a class="menu_btn" href="#">
         <span></span>
       </a>
-      <img src="../img/brain.png" alt="" />
+      <a href="../../index.html">
+        <img src="../img/brain.png" alt="brain" width="48px" height="47px" />
+      </a>
       <h2>тест на определение IQ</h2>
+      <ul class="main_menu">
+        <a class="close_btn" href="#">
+          <span></span>
+        </a>
+        <li class="menu_item"><a class="menu_link" href="./index.html">Главная</a></li>
+        <li class="menu_item"><a class="menu_link" href="./index.html">Информация о тесте</a></li>
+        <li class="menu_item"><a class="menu_link" href="./index.html">пройти тест</a></li>
+      </ul>
     </header>
     <main>
       <section class="survey">
-        <div class="progress_bar"><div class="progress" style="width: 30.8%;"></div></div>
-        <h5>Продолжите числовой ряд:
-          18  20  24  32  :</h5>
+        <div class="progress_bar">
+          <div class="progress" style="width: 30.8%"></div>
+        </div>
+        <h5>Продолжите числовой ряд: 18 20 24 32 :</h5>
         <form class="survey_form" action="./colors1.html">
           <div class="questions_container">
             <label class="survey_label" for="62">
@@ -98,15 +109,23 @@
             if (label.htmlFor === event.target.value) {
               label.classList.add("active");
               submitButton.classList.add("active");
-            }
-            else {
+            } else {
               label.classList.remove("active");
-            };
+            }
           });
         }
         inputs.forEach((input) => {
           input.addEventListener("change", handleInputChange);
         });
+      });
+      const burgerBtn = document.querySelector(".menu_btn");
+      const mainMenu = document.querySelector(".main_menu");
+      const closeBtn = document.querySelector(".close_btn");
+      burgerBtn.addEventListener("click", () => {
+        mainMenu.style.display = "flex";
+      });
+      closeBtn.addEventListener("click", () => {
+        mainMenu.style.display = "none";
       });
     </script>
   </body>
