@@ -1,4 +1,4 @@
-.questions_container {
+.questions_wrapper {
   height: 100dvh;
 }
 
@@ -12,6 +12,9 @@
   height: 100%;
 }
 
+.questiond_main {
+  height: 100%;
+}
 h2 {
   display: flex;
   align-items: center;

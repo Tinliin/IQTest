@@ -889,7 +889,7 @@ h6 {
   margin: 0 2px;
   color: #ffffff;
 }
-.questions_container {
+.questions_wrapper {
   height: 100dvh;
 }
 
@@ -900,6 +900,10 @@ h6 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100%;
+}
+
+.questiond_main {
   height: 100%;
 }
 
