@@ -889,3 +889,218 @@ h6 {
   margin: 0 2px;
   color: #ffffff;
 }
+.questions_container {
+  height: 100dvh;
+}
+
+.survey {
+  background-image: url(../img/rain_bk2.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+h2 {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffc700;
+}
+
+.survey_form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+@media (min-width: 600px) {
+  .survey_form {
+    width: 600px;
+    margin: 0 auto;
+  }
+}
+
+.survey_label {
+  display: flex;
+  align-items: center;
+  background: rgba(242, 243, 243, 0.15);
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 58px;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  text-transform: none;
+  color: #ffffff;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.survey_label.active {
+  background: #FFC700;
+}
+
+.survey_input {
+  margin-right: 39px;
+  margin-left: 35px;
+  width: 20px;
+  height: 20px;
+}
+.survey_input:checked {
+  background: #2950c2;
+  color: #2950c2;
+  border: 1px solid #272727;
+}
+
+.submit_button {
+  width: 189px;
+  height: 41px;
+  background: #dadada;
+  box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #8e8e8e;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.submit_button.active {
+  background: radial-gradient(50% 50% at 50% 50%, #ffc700 0%, #ffc700 100%);
+  color: #0d0c11;
+  border: none;
+}
+
+.questions_container {
+  margin: auto 0;
+  width: 100%;
+}
+
+h5 {
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.progress_bar {
+  width: 80vw;
+  height: 11px;
+  background: #f2f3f3;
+  mix-blend-mode: normal;
+  opacity: 0.59;
+  border-radius: 10.5px;
+  margin: 17px auto;
+}
+
+.progress {
+  height: 100%;
+  left: 30px;
+  top: 63px;
+  background: #3bde7c;
+  border-radius: 10.5px;
+}
+
+.processing {
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: auto;
+  width: 80vw;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+#spinner {
+  animation: spin 2s linear infinite;
+}
+.white_sqaers_container {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+  margin-top: 45px;
+}
+
+.white_square_input {
+  position: relative;
+  opacity: 0;
+  width: 41px;
+  height: 42px;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.horizontal_line {
+  height: 4px;
+  width: 100%;
+  color: #F2F3F3;
+  margin: 24px 0 22px;
+  background: #F2F3F3;
+  opacity: 0.15;
+}
+
+.white_square {
+  box-sizing: border-box;
+  position: relative;
+  border: 6px solid transparent;
+  cursor: pointer;
+  background: #ffffff;
+}
+.white_square:hover {
+  border-color: #ffc700;
+}
+
+.white_square_text {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 49px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #0d0c11;
+  width: 100%;
+}
+
+.active_whie_square {
+  border-color: #ffc700;
+}

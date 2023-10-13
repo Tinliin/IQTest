@@ -1,3 +1,7 @@
+.questions_container {
+  height: 100dvh;
+}
+
 .survey {
   background-image: url(../img/rain_bk2.png);
   background-size: cover;
@@ -5,7 +9,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100dvh-46px;
+  height: 100%;
 }
 
 h2 {
